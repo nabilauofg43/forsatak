@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="تصفح أحدث الوظائف واستخدم خيارات البحث والتصفية للعثور على الفرصة المناسبة.">
+  <title>الوظائف | فرصتك</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body data-page="jobs">
+  <a class="skip-link" href="#main-content">انتقل إلى المحتوى</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="فرصتك - الصفحة الرئيسية"><span class="brand-mark">ف</span><span>فرصتك</span></a>
+      <nav class="main-nav" aria-label="التنقل الرئيسي"><a href="index.html">الرئيسية</a><a href="jobs.html" aria-current="page">الوظائف</a><a href="about.html">عن فرصتك</a><a href="contact.html">تواصل معنا</a></nav>
+      <a class="button button-small header-cta" href="jobs.html">اكتشف الوظائف</a>
+    </div>
+  </header>
+  <main id="main-content">
+    <section class="page-banner">
+      <div class="container"><span class="eyebrow">فرص تناسب خطوتك القادمة</span><h1>اكتشف الوظائف</h1><p>ابحث بين الفرص المتاحة، واستخدم عوامل التصفية للوصول إلى ما يناسبك.</p><div class="breadcrumbs"><a href="index.html">الرئيسية</a><span aria-hidden="true">/</span><span aria-current="page">الوظائف</span></div></div>
+    </section>
+    <section class="section jobs-section">
+      <div class="container">
+        <form class="filters-panel" id="job-filters" role="search">
+          <div class="filter-field filter-keyword"><label for="job-keyword">ابحث بالكلمة</label><input id="job-keyword" name="q" type="search" placeholder="المسمى الوظيفي أو الشركة"></div>
+          <div class="filter-field"><label for="job-category">المجال</label><select id="job-category" name="category"><option value="">جميع المجالات</option><option value="تقنية المعلومات">تقنية المعلومات</option><option value="التسويق">التسويق</option><option value="التصميم">التصميم</option><option value="الموارد البشرية">الموارد البشرية</option><option value="المالية">المالية والمحاسبة</option><option value="التعليم">التعليم</option><option value="الهندسة">الهندسة</option><option value="المبيعات">المبيعات</option><option value="خدمة العملاء">خدمة العملاء</option></select></div>
+          <div class="filter-field"><label for="job-type">نوع الوظيفة</label><select id="job-type" name="type"><option value="">جميع الأنواع</option><option value="دوام كامل">دوام كامل</option><option value="دوام جزئي">دوام جزئي</option><option value="عمل عن بُعد">عمل عن بُعد</option><option value="تدريب">تدريب</option></select></div>
+          <div class="filter-field"><label for="job-location">الموقع</label><select id="job-location" name="location"><option value="">جميع المواقع</option><option value="الخرطوم">الخرطوم</option><option value="أم درمان">أم درمان</option><option value="بحري">بحري</option><option value="ود مدني">ود مدني</option><option value="بورتسودان">بورتسودان</option><option value="كسلا">كسلا</option><option value="القضارف">القضارف</option><option value="سنار">سنار</option><option value="الأبيض">الأبيض</option><option value="كوستي">كوستي</option><option value="دنقلا">دنقلا</option><option value="عطبرة">عطبرة</option><option value="شندي">شندي</option><option value="نيالا">نيالا</option><option value="الفاشر">الفاشر</option><option value="الدمازين">الدمازين</option><option value="السودان عن بُعد">السودان عن بُعد</option></select></div>
+          <button class="button filter-button" type="submit">تصفية النتائج</button>
+        </form>
+        <div class="results-heading"><p id="results-count" aria-live="polite"></p><button class="clear-filters" id="clear-filters" type="button">مسح التصفية</button></div>
+        <div class="job-grid" id="all-jobs" aria-live="polite"></div>
+        <p class="empty-state" id="empty-jobs" hidden>لا توجد وظائف مطابقة لبحثك. جرّب تغيير كلمات البحث أو خيارات التصفية.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-main"><div class="footer-about"><a class="brand brand-footer" href="index.html"><span class="brand-mark">ف</span><span>فرصتك</span></a><p>منصة تساعدك على اكتشاف فرص العمل المناسبة والاقتراب من أهدافك المهنية.</p></div><div class="footer-links"><h2>روابط سريعة</h2><a href="jobs.html">الوظائف</a><a href="about.html">عن فرصتك</a><a href="contact.html">تواصل معنا</a></div><div class="footer-contact"><h2>تواصل معنا</h2><a href="mailto:hello@forsatak.example">hello@forsatak.example</a><span>نعمل على ربط الطموح بالفرصة.</span></div></div>
+    <div class="container footer-bottom"><span>© <span data-current-year></span> فرصتك. جميع الحقوق محفوظة.</span><span>مساحتك للخطوة المهنية القادمة</span></div>
+  </footer>
+</body>
+</html>

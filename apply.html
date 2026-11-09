@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="قدّم على الوظيفة المناسبة في فرصتك وأرفق سيرتك الذاتية.">
+  <title>التقديم على الوظيفة | فرصتك</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body data-page="apply">
+  <a class="skip-link" href="#main-content">انتقل إلى المحتوى</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="فرصتك - الصفحة الرئيسية"><span class="brand-mark">ف</span><span>فرصتك</span></a>
+      <nav class="main-nav" aria-label="التنقل الرئيسي"><a href="index.html">الرئيسية</a><a href="jobs.html">الوظائف</a><a href="about.html">عن فرصتك</a><a href="contact.html">تواصل معنا</a></nav>
+      <a class="button button-small header-cta" href="jobs.html">اكتشف الوظائف</a>
+    </div>
+  </header>
+  <main id="main-content">
+    <section class="page-banner">
+      <div class="container"><span class="eyebrow">خطوتك المهنية التالية</span><h1>التقديم على وظيفة</h1><p>أكمل بياناتك وأرفق سيرتك الذاتية للتقديم على الفرصة.</p><div class="breadcrumbs"><a href="index.html">الرئيسية</a><span aria-hidden="true">/</span><a href="jobs.html">الوظائف</a><span aria-hidden="true">/</span><span aria-current="page">التقديم</span></div></div>
+    </section>
+    <section class="section contact-section">
+      <div class="container">
+        <div class="application-job-missing" id="application-job-missing" hidden>
+          <h2>لم يتم تحديد الوظيفة</h2>
+          <p>اختر وظيفة من القائمة لتتمكن من إرسال طلب التقديم.</p>
+          <a class="button" href="jobs.html">استعراض الوظائف</a>
+        </div>
+        <div class="contact-layout" id="application-form-section">
+          <div class="contact-info"><span class="eyebrow">بيانات التقديم</span><h2>عرّفنا بنفسك، واقترب من فرصتك.</h2><p>أدخل بياناتك بدقة، وأرفق سيرتك الذاتية بصيغة PDF.</p><div class="application-job-card"><span>الوظيفة التي تتقدم إليها</span><strong id="application-job-name"></strong></div><div class="contact-detail"><span>السيرة الذاتية</span><p>ارفق ملف PDF بحجم لا يتجاوز 5 ميجابايت.</p></div></div>
+          <form class="contact-form application-form" id="application-form">
+            <input id="application-job-id" name="job_id" type="hidden">
+            <div class="filter-field"><label for="applicant-name">الاسم الكامل</label><input id="applicant-name" name="name" type="text" autocomplete="name" required></div>
+            <div class="form-row">
+              <div class="filter-field"><label for="applicant-email">البريد الإلكتروني</label><input id="applicant-email" name="email" type="email" autocomplete="email" required></div>
+              <div class="filter-field"><label for="applicant-phone">رقم الهاتف</label><input id="applicant-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" title="أدخل رقم هاتف صحيحاً يتكون من 7 إلى 20 رقماً أو رمزاً." required></div>
+            </div>
+            <div class="form-row">
+              <div class="filter-field"><label for="applicant-education">المؤهل العلمي</label><select id="applicant-education" name="education" required><option value="">اختر المؤهل العلمي</option><option value="ثانوية عامة">ثانوية عامة</option><option value="دبلوم">دبلوم</option><option value="بكالوريوس">بكالوريوس</option><option value="ماجستير">ماجستير</option><option value="دكتوراه">دكتوراه</option><option value="أخرى">أخرى</option></select></div>
+              <div class="filter-field"><label for="applicant-experience">سنوات الخبرة</label><input id="applicant-experience" name="experience_years" type="number" min="0" max="60" step="1" inputmode="numeric" required></div>
+            </div>
+            <div class="filter-field"><label for="application-resume">السيرة الذاتية (PDF)</label><input id="application-resume" name="resume" type="file" accept=".pdf,application/pdf" aria-describedby="resume-help" required><p class="application-resume-help" id="resume-help">ملف PDF فقط، بحد أقصى 5 ميجابايت.</p></div>
+            <div class="filter-field"><label for="applicant-message">رسالة تعريفية <span>(اختياري)</span></label><textarea id="applicant-message" name="message" rows="4"></textarea></div>
+            <button class="button" type="submit">إرسال طلب التقديم</button>
+            <p class="form-notice" id="application-notice" role="status" hidden></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-main"><div class="footer-about"><a class="brand brand-footer" href="index.html"><span class="brand-mark">ف</span><span>فرصتك</span></a><p>منصة تساعدك على اكتشاف فرص العمل المناسبة والاقتراب من أهدافك المهنية.</p></div><div class="footer-links"><h2>روابط سريعة</h2><a href="jobs.html">الوظائف</a><a href="about.html">عن فرصتك</a><a href="contact.html">تواصل معنا</a></div><div class="footer-contact"><h2>تواصل معنا</h2><a href="mailto:hello@forsatak.example">hello@forsatak.example</a><span>نعمل على ربط الطموح بالفرصة.</span></div></div>
+    <div class="container footer-bottom"><span>© <span data-current-year></span> فرصتك. جميع الحقوق محفوظة.</span><span>مساحتك للخطوة المهنية القادمة</span></div>
+  </footer>
+</body>
+</html>
